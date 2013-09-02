@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tweet Demo</title>
+		<link href="../tweet-master/tweet/jquery.tweet.css" rel="stylesheet"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script src="../tweet-master/tweet/jquery.tweet.js" charset="utf-8"></script>
+
+		<script type='text/javascript'>
+		    jQuery(function($){
+		        $(".tweet").tweet({
+		            twitter_api_proxy_url:"http://0.0.0.0:3000",
+		            join_text: "auto",
+		            avatar_size: 32,
+		            count: 25,
+		            loading_text: "loading tweets...",
+		            //query:"#bananas"
+		            username:"AVMAmeets"
+		        });
+		    });
+		</script>
+
+	 </head>
+
+	 <body>
+
+	 	<div class="tweet"><div>
+
+	 </body>
+
+ </html>
