@@ -126,10 +126,11 @@ get '/1.1/search/tweets.json' do
 
 	rescue Twitter::Error::TooManyRequests => error
   		#return result from the cache instead		
-   		
+   		puts "too many requests, fetching from cache"
+
 		#attempt to retrieve cached json result
 		begin
-			json_store_result = File.read("public/json_results/user_timeline_#{screen_name}.json","r")
+			json_store_result = File.read("public/json_results/twitter_search_#{q}.json","r")
 			return "#{callback}(#{json_store_result})"
 		rescue
 			#if the file doesn't exist, return empty result
