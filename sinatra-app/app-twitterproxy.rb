@@ -25,10 +25,10 @@ configure do
 	#set :max_age, "1728000"
 
 	Twitter.configure do |config|
-	  config.consumer_key = 'hZLqeeiA5KcdQw8bkPCTA'
-	  config.consumer_secret = 'jWDo0nc1KYC13lTa8SMT20IohxUxJ2xh9M1qW3QcONk'
-	  config.oauth_token = '17091428-yb2uEQrf10sGSi088pS2QZTVNOcc2XC3wBCfskftu'
-	  config.oauth_token_secret = 'xmBWhcCVt4Z9zYPNkDMjDC8EdscCgZQUSKFiFnx7SI'
+	  config.consumer_key = ''
+	  config.consumer_secret = ''
+	  config.oauth_token = ''
+	  config.oauth_token_secret = ''
 	end
 
 end
