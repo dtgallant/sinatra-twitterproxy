@@ -110,7 +110,7 @@ get '/1.1/search/tweets.json' do
 	begin
 
 		tweets = []
-		Twitter.search(q).results.each do |tweet|
+		Twitter.search(q,:include_entities => include_entities).results.each do |tweet|
 			#puts "#{tweet.attrs.to_json}"
 			tweets << tweet.attrs
 		end
